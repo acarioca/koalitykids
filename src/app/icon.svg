@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4FC3D9"/>
+      <stop offset="50%" style="stop-color:#A78BFA"/>
+      <stop offset="100%" style="stop-color:#F472B6"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#grad)"/>
+  <!-- Koala ears -->
+  <circle cx="156" cy="156" r="80" fill="white" opacity="0.95"/>
+  <circle cx="356" cy="156" r="80" fill="white" opacity="0.95"/>
+  <circle cx="156" cy="156" r="48" fill="white" opacity="0.5"/>
+  <circle cx="356" cy="156" r="48" fill="white" opacity="0.5"/>
+  <!-- Koala face -->
+  <ellipse cx="256" cy="296" rx="140" ry="150" fill="white" opacity="0.95"/>
+  <!-- Eyes -->
+  <circle cx="212" cy="268" r="20" fill="#1A1A2E"/>
+  <circle cx="300" cy="268" r="20" fill="#1A1A2E"/>
+  <circle cx="220" cy="260" r="6" fill="white"/>
+  <circle cx="308" cy="260" r="6" fill="white"/>
+  <!-- Nose -->
+  <ellipse cx="256" cy="320" rx="32" ry="22" fill="#1A1A2E" opacity="0.8"/>
+  <!-- Mouth -->
+  <path d="M240 342 Q256 358 272 342" stroke="#1A1A2E" stroke-width="4" fill="none" opacity="0.6" stroke-linecap="round"/>
+</svg>
