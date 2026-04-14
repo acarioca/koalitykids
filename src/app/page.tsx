@@ -37,34 +37,62 @@ export default function Home() {
 
         <div className="relative z-10 w-full max-w-6xl mx-auto">
           {/* The Qualities — stacked typographic hero */}
-          <h1 className="sr-only">KoalityKids — Creative, Curious, Courageous, Caring, Human</h1>
-          <div className="flex flex-col items-start gap-0 select-none" aria-hidden="true">
-            <span className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up" style={{ animationDelay: "150ms" }}>
+          <h1 className="sr-only">
+            KoalityKids — Creative, Curious, Courageous, Caring, Human
+          </h1>
+          <div
+            className="flex flex-col items-start gap-0 select-none"
+            aria-hidden="true"
+          >
+            <span
+              className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up"
+              style={{ animationDelay: "150ms" }}
+            >
               Curious<span className="text-violet">.</span>
             </span>
-            <span className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up" style={{ animationDelay: "0ms" }}>
+            <span
+              className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up"
+              style={{ animationDelay: "0ms" }}
+            >
               Mindful<span className="text-teal">.</span>
             </span>
-            <span className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+            <span
+              className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up"
+              style={{ animationDelay: "300ms" }}
+            >
               Brave<span className="text-pink">.</span>
             </span>
-            <span className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up" style={{ animationDelay: "450ms" }}>
+            <span
+              className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight text-white/90 animate-fade-in-up"
+              style={{ animationDelay: "450ms" }}
+            >
               Kind<span className="text-teal">.</span>
             </span>
-            <span className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight gradient-text animate-fade-in-up" style={{ animationDelay: "600ms" }}>
+            <span
+              className="hero-word text-[clamp(3rem,12vw,9rem)] font-bold leading-[0.95] tracking-tight gradient-text animate-fade-in-up"
+              style={{ animationDelay: "600ms" }}
+            >
               Playful.
             </span>
           </div>
 
           {/* Brand anchor + CTA — bottom right */}
           <div className="mt-10 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-8">
-            <div className="animate-fade-in-up" style={{ animationDelay: "800ms" }}>
-              <p className="text-white/50 text-sm uppercase tracking-[0.3em] mb-2">We are</p>
+            <div
+              className="animate-fade-in-up"
+              style={{ animationDelay: "800ms" }}
+            >
+              <p className="text-white/50 text-sm uppercase tracking-[0.3em] mb-2">
+                We are
+              </p>
               <p className="text-white text-2xl md:text-3xl font-bold">
                 Koality<span className="gradient-text">Kids</span>
               </p>
             </div>
-            <div className="animate-fade-in-up" style={{ animationDelay: "950ms" }}>
+            <div
+              className="animate-fade-in-up"
+              style={{ animationDelay: "950ms" }}
+            >
               <a
                 href="#download"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2 text-base shadow-lg"
@@ -81,12 +109,19 @@ export default function Home() {
       <section id="features" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">What we do</p>
+            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">
+              What we do
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
               Fuelling Curious Young Minds
             </h2>
             <p className="text-text-secondary mt-4 max-w-2xl mx-auto leading-relaxed">
-              We live in a busy world where children&apos;s curiosities often go unanswered, and passive screen time is linked to real developmental challenges. KoalityKids is built around active learning and hands-on exploration — helping kids discover the world around them in ways that promote healthy development, body and mind.
+              We live in a busy world where children&apos;s curiosities often go
+              unanswered, and passive screen time is linked to real
+              developmental challenges. KoalityKids is built around active
+              learning and hands-on exploration — helping kids discover the
+              world around them in ways that promote healthy development, body
+              and mind.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -135,7 +170,9 @@ export default function Home() {
       <section id="how-it-works" className="py-20 px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">How It Works</p>
+            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">
+              How It Works
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
               Three Steps to Start Exploring
             </h2>
@@ -164,12 +201,15 @@ export default function Home() {
       <section id="pricing" className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">Pricing</p>
+            <p className="text-sm font-medium text-purple uppercase tracking-wider mb-3">
+              Pricing
+            </p>
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary">
               Choose Your Plan
             </h2>
             <p className="text-text-secondary mt-4 max-w-lg mx-auto">
-              Start free and upgrade anytime. Every plan includes a safe, ad-free experience.
+              Start free and upgrade anytime. Every plan includes a safe,
+              ad-free experience.
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
@@ -252,15 +292,20 @@ export default function Home() {
               Ready to Start Exploring?
             </h2>
             <p className="text-text-secondary mb-8 max-w-lg mx-auto leading-relaxed">
-              Download KoalityKids for free and watch your child discover the wonders of the natural world — one photo at a time.
+              Download KoalityKids for free and watch your child discover the
+              wonders of the natural world — one photo at a time.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="#"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z" />
                 </svg>
                 App Store
               </a>
@@ -268,8 +313,12 @@ export default function Home() {
                 href="#"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                  <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.302v-.19zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  className="w-5 h-5"
+                >
+                  <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 01-.61-.92V2.734a1 1 0 01.609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302a1 1 0 010 1.38l-2.302 2.302L15.396 13l2.302-2.302v-.19zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z" />
                 </svg>
                 Google Play
               </a>
@@ -291,7 +340,10 @@ export default function Home() {
               </p>
             </div>
             <div className="flex items-center gap-6">
-              <a href="mailto:hello@koalitytech.com" className="text-sm text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2">
+              <a
+                href="mailto:hello@koalitytech.com"
+                className="text-sm text-text-secondary hover:text-text-primary transition-colors flex items-center gap-2"
+              >
                 <Mail size={14} />
                 hello@koalitytech.com
               </a>
@@ -299,11 +351,22 @@ export default function Home() {
           </div>
           <div className="mt-8 pt-6 border-t border-black/5 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-text-secondary">
-              &copy; {new Date().getFullYear()} Koality Pty Ltd. All rights reserved.
+              &copy; {new Date().getFullYear()} Koality Pty Ltd. All rights
+              reserved.
             </p>
             <div className="flex items-center gap-6">
-              <a href="/privacy" className="text-xs text-text-secondary hover:text-text-primary transition-colors">Privacy Policy</a>
-              <a href="/contact" className="text-xs text-text-secondary hover:text-text-primary transition-colors">Contact</a>
+              <a
+                href="/privacy"
+                className="text-xs text-text-secondary hover:text-text-primary transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="/contact"
+                className="text-xs text-text-secondary hover:text-text-primary transition-colors"
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>
@@ -326,11 +389,15 @@ function FeatureCard({
 }) {
   return (
     <div className="bg-sage rounded-card p-6 hover:shadow-md transition-shadow">
-      <div className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-4`}>
+      <div
+        className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-4`}
+      >
         {icon}
       </div>
       <h3 className="text-lg font-semibold text-text-primary mb-2">{title}</h3>
-      <p className="text-sm text-text-secondary leading-relaxed">{description}</p>
+      <p className="text-sm text-text-secondary leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
@@ -348,8 +415,12 @@ function StepCard({
   return (
     <div className="bg-white rounded-card p-8 text-center shadow-sm">
       <span className="gradient-text text-4xl font-bold">{number}</span>
-      <h3 className="text-lg font-semibold text-text-primary mt-4 mb-2">{title}</h3>
-      <p className="text-sm text-text-secondary leading-relaxed">{description}</p>
+      <h3 className="text-lg font-semibold text-text-primary mt-4 mb-2">
+        {title}
+      </h3>
+      <p className="text-sm text-text-secondary leading-relaxed">
+        {description}
+      </p>
     </div>
   );
 }
@@ -387,12 +458,16 @@ function PricingCard({
       }`}
     >
       {badge && (
-        <span className={`inline-block text-[10px] font-medium px-3 py-1 rounded-lg mb-4 ${badgeColor}`}>
+        <span
+          className={`inline-block text-[10px] font-medium px-3 py-1 rounded-lg mb-4 ${badgeColor}`}
+        >
           {badge}
         </span>
       )}
       <div className="flex items-center gap-3 mb-3">
-        <div className={`w-11 h-11 rounded-xl ${iconBg} flex items-center justify-center`}>
+        <div
+          className={`w-11 h-11 rounded-xl ${iconBg} flex items-center justify-center`}
+        >
           {icon}
         </div>
         <div>
@@ -401,13 +476,21 @@ function PricingCard({
       </div>
       <div className="flex items-baseline gap-1 mb-1">
         <span className="text-3xl font-bold text-text-primary">{price}</span>
-        {subtitle && <span className="text-sm text-text-secondary">{subtitle}</span>}
+        {subtitle && (
+          <span className="text-sm text-text-secondary">{subtitle}</span>
+        )}
       </div>
       <p className="text-sm text-text-secondary mb-5">{description}</p>
       <ul className="space-y-2.5">
         {features.map((f, i) => (
-          <li key={i} className="flex items-start gap-2 text-sm text-text-primary">
-            <Check size={16} className="text-success-green mt-0.5 flex-shrink-0" />
+          <li
+            key={i}
+            className="flex items-start gap-2 text-sm text-text-primary"
+          >
+            <Check
+              size={16}
+              className="text-success-green mt-0.5 flex-shrink-0"
+            />
             {f}
           </li>
         ))}
@@ -415,4 +498,3 @@ function PricingCard({
     </div>
   );
 }
-

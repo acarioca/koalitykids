@@ -1,11 +1,6 @@
 import Link from "next/link";
 import { ArrowLeft, Mail, MapPin, Clock } from "lucide-react";
 
-export const metadata = {
-  title: "Contact Us — KoalityKids",
-  description: "Get in touch with the KoalityKids team. We'd love to hear from you.",
-};
-
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-sage">
@@ -33,7 +28,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-text-secondary max-w-lg mx-auto">
-              Have a question, suggestion, or partnership enquiry? We&apos;d love to hear from you.
+              Have a question, suggestion, or partnership enquiry? We&apos;d
+              love to hear from you.
             </p>
           </div>
 
@@ -46,6 +42,16 @@ export default function ContactPage() {
               description="For general enquiries, support, or feedback."
               detail="hello@koalitytech.com"
               href="mailto:hello@koalitytech.com"
+              extra={
+                <div style={{ marginTop: "20px" }}>
+                  <Link
+                    href="/support"
+                    className="gradient-bg hover:gradient-bg-hover text-white text-sm font-medium px-5 py-2 rounded-pill transition-all"
+                  >
+                    Contact Support
+                  </Link>
+                </div>
+              }
             />
             <ContactCard
               icon={<MapPin size={24} className="text-teal" />}
@@ -62,8 +68,9 @@ export default function ContactPage() {
               Schools & Organisations
             </h2>
             <p className="text-sm text-text-secondary mb-6 max-w-md mx-auto">
-              Interested in KoalityKids for your school, childcare centre, or organisation?
-              We offer custom Enterprise plans with dedicated support.
+              Interested in KoalityKids for your school, childcare centre, or
+              organisation? We offer custom Enterprise plans with dedicated
+              support.
             </p>
             <a
               href="mailto:hello@koalitytech.com?subject=Enterprise%20Enquiry"
@@ -91,6 +98,7 @@ function ContactCard({
   description,
   detail,
   href,
+  extra,
 }: {
   icon: React.ReactNode;
   iconBg: string;
@@ -98,21 +106,28 @@ function ContactCard({
   description: string;
   detail: string;
   href?: string;
+  extra?: React.ReactNode;
 }) {
   return (
     <div className="bg-white rounded-2xl p-6 shadow-sm">
-      <div className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-4`}>
+      <div
+        className={`w-12 h-12 rounded-xl ${iconBg} flex items-center justify-center mb-4`}
+      >
         {icon}
       </div>
       <h3 className="text-lg font-semibold text-text-primary mb-1">{title}</h3>
       <p className="text-sm text-text-secondary mb-3">{description}</p>
       {href ? (
-        <a href={href} className="text-sm font-medium text-purple hover:underline">
+        <a
+          href={href}
+          className="text-sm font-medium text-purple hover:underline"
+        >
           {detail}
         </a>
       ) : (
         <p className="text-sm font-medium text-text-primary">{detail}</p>
       )}
+      {extra}
     </div>
   );
 }
