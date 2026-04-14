@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { ArrowLeft, Send, CheckCircle } from "lucide-react";
 import { useState } from "react";
+import axios, { isAxiosError } from "axios";
+import { ErrorResponse } from "../types";
 
 const CATEGORIES = [
   "General Inquiry",
@@ -16,6 +18,7 @@ const CATEGORIES = [
 export default function SupportPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<string>("");
   const [form, setForm] = useState({
     category: "",
     subject: "",
@@ -34,9 +37,26 @@ export default function SupportPage() {
     e.preventDefault();
     if (!form.category || !form.subject || !form.description) return;
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setLoading(false);
-    setSubmitted(true);
+    try {
+      await axios.post(`/api/ticket`, {
+        subject: form.subject,
+        category: form.category,
+        description: form.category,
+      });
+      setSubmitted(true);
+    } catch (err) {
+      if (isAxiosError<ErrorResponse>(err)) {
+        console.log(err.response);
+        setMessage(
+          err.response?.data.message ||
+            "An unknown error occurred. Please try again later.",
+        );
+      } else {
+        setMessage("An unknown error occurred. Please try again later.");
+      }
+    } finally {
+      setLoading(false);
+    }
   };
 
   const isValid = form.category && form.subject && form.description;
@@ -174,6 +194,10 @@ export default function SupportPage() {
                     </>
                   )}
                 </button>
+
+                {message.length ? (
+                  <h2 style={{ color: "#FF0000" }}>{message}</h2>
+                ) : null}
 
                 <p className="text-xs text-center text-text-secondary">
                   Or email us directly at{" "}
