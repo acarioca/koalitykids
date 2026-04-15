@@ -38,19 +38,38 @@ export default function SupportPage() {
     if (!form.category || !form.subject || !form.description) return;
     setLoading(true);
     try {
-      await axios.post(`/api/ticket`, {
-        subject: form.subject,
-        category: form.category,
-        description: form.category,
-      });
+      if (!form.subject || form.subject.length <= 0) {
+        setMessage("Subject is required");
+      }
+
+      if (!form.category || form.category.length <= 0) {
+        setMessage("Category is required");
+      }
+
+      if (!form.description || form.description.length <= 0) {
+        setMessage("Description is required");
+      }
+
+      const validCategoryTypes: string[] = [
+        "general inquiry",
+        "technical support",
+        "billing issue",
+        "feature request",
+        "bug report",
+        "other",
+      ];
+
+      if (!validCategoryTypes.includes(form.category.toLowerCase())) {
+        setMessage("Please provide a valid category.");
+      }
+
+      const res = await axios.post(`/api/ticket`, form);
+
       setSubmitted(true);
     } catch (err) {
-      if (isAxiosError<ErrorResponse>(err)) {
-        console.log(err.response);
-        setMessage(
-          err.response?.data.message ||
-            "An unknown error occurred. Please try again later.",
-        );
+      console.log(err);
+      if (isAxiosError<ErrorResponse<any>>(err)) {
+        setMessage("An unknown error occurred. Please try again later.");
       } else {
         setMessage("An unknown error occurred. Please try again later.");
       }

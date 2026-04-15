@@ -45,7 +45,7 @@ export default function ContactPage() {
               extra={
                 <div style={{ marginTop: "20px" }}>
                   <Link
-                    href="/form"
+                    href="/support"
                     className="gradient-bg hover:gradient-bg-hover text-white text-sm font-medium px-5 py-2 rounded-pill transition-all"
                   >
                     Contact Support
