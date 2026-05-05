@@ -94,7 +94,9 @@ export default function Home() {
               style={{ animationDelay: "950ms" }}
             >
               <a
-                href="#download"
+                href="https://apps.apple.com/au/app/koality-kids/id6751373310"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2 text-base shadow-lg"
               >
                 Download App
@@ -297,7 +299,9 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
-                href="#"
+                href="https://apps.apple.com/au/app/koality-kids/id6751373310"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2"
               >
                 <svg
@@ -311,6 +315,8 @@ export default function Home() {
               </a>
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="gradient-bg hover:gradient-bg-hover text-white font-medium px-8 py-4 rounded-pill transition-all flex items-center gap-2"
               >
                 <svg
